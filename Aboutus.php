@@ -7,7 +7,11 @@ $database= "web2";
 $conn= mysqli_connect($server,$username,$password,$database);
 if (isset($_POST["submitbutton"]))
 {
-$email=$_POST["email"];
+$email=$_POST['email'];
+
+$insertData=mysqli_query( $conn,"INSERT INTO
+subscribers(email)
+VALUES ('$email')");
 
 if($insertData)
    {
@@ -103,7 +107,7 @@ else {
                             <input type="email" class="form-control" name="email" placeholder="Your email address">
                         </div>
                         <div class="mb-3 col-lg-6 col-md-6">
-                             <button class="btn btn-primary">Subscribe</button>
+                             <button type="submit" name="submitbutton" class="btn btn-primary">Subscribe</button>
                         </div>
                     </div>
                 </form>
