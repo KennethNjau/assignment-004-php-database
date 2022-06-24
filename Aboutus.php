@@ -1,14 +1,19 @@
 <?php
+//database connection
 $server="localhost";
 $username="root";
 $password="";
 $database= "web2";
 
 $conn= mysqli_connect($server,$username,$password,$database);
+//isset triggers what's in the form
 if (isset($_POST["submitbutton"]))
 {
-$email=$_POST['email'];
+    
 
+
+$email= $_POST['email'];
+    
 $insertData=mysqli_query( $conn,"INSERT INTO
 subscribers(email)
 VALUES ('$email')");
@@ -36,7 +41,7 @@ else {
 </head>
 <body>
         <!--Navbar starts here-->
-        <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
+       <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand">Zalego academy</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#menus">
@@ -46,12 +51,12 @@ else {
                     <div class="navbar-nav">
                         <a href="index.html" class="nav-link active">Home</a>
                         <a href="Aboutus.html" class="nav-link">About Us</a>
-                        <a href="#" class="nav-link">Contact us</a>
+                        <a href="enroll.php" class="btn btn-primary">Register now</a>
                     </div>
                 </div>
             </div>
     
-        </nav>
+        </nav> 
     
         <!--Navbar ends-->
         <main class="p-5 bg-light mb-4 ">

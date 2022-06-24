@@ -19,7 +19,7 @@
                 <div class="navbar-nav">
                     <a href="index.html" class="nav-link active">Home</a>
                     <a href="Aboutus.html" class="nav-link">About Us</a>
-                    <a href="#" class="nav-link">Contact us</a>
+                    <a href="enroll.php" class="btn btn-primary">Register now</a>
                 </div>
             </div>
         </div>
