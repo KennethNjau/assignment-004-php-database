@@ -63,9 +63,16 @@
                              <p>In order to complete your registration to the bootcamp, you are required to select one course you will be 
                             undertaking. please Note that this will be your learning track during the 2-week immersion.
                              </p>
-                        <div class="mb-3 col-lg-8 col-md-8 col-sm-12 ">
-                             <label for="gender" class="form-lebel">--select your course--</label>
-                             <input type="text" class="form-control" placeholder="--select your gender?--">
+                        <div class="dropdown ">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                             select your course
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                             <li><a class="dropdown-item" href="#">Web Design</a></li>
+                             <li><a class="dropdown-item" href="#">Cyber Security </a></li>
+                             <li><a class="dropdown-item" href="#">Database</a></li>
+                           </ul>
+                            
                         </div>
                         <p>You agree by providing your information you understand all our data privacy protection policy 
                             outlined in our Terms & conditions and the prvacy policy statements
