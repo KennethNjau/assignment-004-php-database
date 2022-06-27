@@ -106,7 +106,7 @@ else {
             </div>
             <div>
                 <p>Subscribe to get information, latest news about Zalego Academy</p>
-                <form action="Aboutus.php" method="post">
+                <form action="enroll.php" method="post">
                     <div class="row">
                        <div class="mb-3 col-lg-6 col-md-6">
                             <input type="email" class="form-control" name="email" placeholder="Your email address">
