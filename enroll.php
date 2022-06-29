@@ -60,8 +60,14 @@ else {
         <!--Navbar ends-->
         <main class="p-5 bg-light mb-4 ">
             <h1>JULY SOFTWARE ENGENEERING BOOTCAMP</h1>
-            <i class="fa fa-calendar"></i> 20th July 2022
-
+                   <li>
+                    <span><i class="fa fa-calender"></i></span>
+                    <span>20th July 2022</span>
+                   </li>
+                   <li>
+                    <span><i class="fa fa-map-maker"></i></span>
+                    <span>Zalego Academy</span>
+                   </li>
         </main>
         <p>Looking for a place to kickstart your career in Technology?
             Whether you're a local, new in town or just cruizing through we've got 
